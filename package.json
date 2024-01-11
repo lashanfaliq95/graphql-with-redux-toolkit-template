@@ -1,0 +1,67 @@
+{
+  "name": "vite-template-redux",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "type-check": "tsc",
+    "generate:graphql": "graphql-codegen --config codegen.ts"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "async-mutex": "^0.4.0",
+    "graphql": "^16.8.1",
+    "graphql-codegen": "^0.4.0",
+    "qs": "^6.11.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/client-preset": "^4.1.0",
+    "@graphql-codegen/typescript-resolvers": "^4.0.1",
+    "@graphql-codegen/typescript-rtk-query": "^3.1.1",
+    "@rtk-query/graphql-request-base-query": "^2.3.1",
+    "@testing-library/dom": "^9.2.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.2.5",
+    "@types/node": "^20.11.0",
+    "@types/qs": "^6.9.11",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jsdom": "^21.1.0",
+    "prettier": "^2.7.1",
+    "prettier-config-nick": "^1.0.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.0.0",
+    "vitest": "^0.30.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "react/jsx-no-target-blank": "off"
+    }
+  },
+  "prettier": "prettier-config-nick"
+}
